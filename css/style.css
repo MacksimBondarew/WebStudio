@@ -117,7 +117,7 @@ img {
     font-size: 14px;
     letter-spacing: 0.02em;
     line-height: 1.14;
-
+    fill: var(--osnova-text-color);
     display: inline-block;
 }
 
@@ -202,6 +202,7 @@ img {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
+    margin-bottom: 16px;
 }
 .footer-span {
     color: var(--active-color);
@@ -275,6 +276,7 @@ a{
 .button-filter:active{
     color: var(--active-color);
     background-color: var(--background-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .name-port {
     color: var(--two-text-color);
@@ -364,6 +366,7 @@ a{
     margin-right: 30px;
     background-color: var(--active-color);
     text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .list-comand:last-child {
     margin-right: 0;
@@ -421,6 +424,10 @@ a{
     margin-top: 0px;
     margin-bottom: 30px;
 }
+.port-project:hover,
+.port-project:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .port-project:nth-child(3n){
     margin-right: 0px;
 }
@@ -443,7 +450,6 @@ a{
     height: 16px;
     margin-right: 10px;
     cursor: pointer;
-    fill: var(--osnova-text-color);
 }
 .icon-envelope {
     display: inline-block;
@@ -451,11 +457,148 @@ a{
     height: 12px;
     cursor: pointer;
     margin-right: 10px;
-    fill: #757575;
 } 
 .nomer:hover,
-.nomer:focus{
+.nomer:focus,
+.icon-envelope:hover,
+.icon-envelope:focus,
+.icon-smartphone:hover,
+.icon-smartphone:focus{
     color: var(--background-color);
-    stroke: var(--background-color);
     fill: var(--background-color);
+}
+.icons {
+    width: 270px;
+    height: 120px;
+    background-color: var(--dont-active-color);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-benefits {
+    width: 70px;
+    height: 70px;
+}
+.merej-icons {
+    width: 20px;
+    height: 20px;
+}
+.comand-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link-icons {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    fill: #afb1b8
+}
+.list-icons + .list-icons {
+    margin-left: 10px;
+}
+.link-icons:hover,
+.link-icons:focus,
+.link-icons:active{
+    border-radius: 50px;
+    background-color:var(--background-color);
+    fill: var(--active-color);
+}
+.title-client {
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+.list-client {
+    width: 170px;
+    height: 92px;
+    display: inline-flex;
+}
+.regular-customers {
+    display: flex;
+    justify-content: center;
+}
+.link-client {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    fill: #AFB1B8;
+}
+.list-client + .list-client {
+    margin-left: 30px;
+}
+.link-client:hover,
+.link-client:focus,
+.link-client:active{
+    fill: var(--background-color);
+    border: 1px solid var(--background-color);
+}
+.ya-co{
+    width: 41px;
+    height: 46.7px;
+}
+.taglin-here {
+    width: 40px;
+    height: 52px;
+}
+.company {
+    height: 41.181514739990234px;
+    width: 43.46000671386719px;
+}
+.foster-reters {
+    height: 40.62312698364258px;
+    width: 84.43647766113281px;
+}
+.brand {
+    height: 45.43336486816406px;
+    width: 62.53999710083008px;
+}
+.tag-lin {
+    height: 43.925514221191406px;
+    width: 93.79356384277344px;
+}
+.title-joining {
+    color: var(--active-color);
+    margin-top: 12px;
+    margin-bottom: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.joining-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    fill: var(--active-color);
+    border-radius: 50px;
+    background-color: #43444D;
+}
+.joining-link:hover,
+.joining-link:focus,
+.joining-link:active{
+    border-radius: 50px;
+    background-color:var(--background-color);
+}
+.joining-icons {
+    display: flex;
+}
+.footer-flex {
+    display: flex;
+}
+.joining {
+    margin-left: 70px;
 }
