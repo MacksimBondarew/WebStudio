@@ -19,15 +19,27 @@
         <!--Навігація по сайту-->
         <nav class="nav">
             <ul class="navigation">
-                <li class="list-studio list"><a class="studio" href="./index.html">Студія</a></li>
-                <li class="list-portfolio list "><a class="studio current" href="./portfolio.html">Портфоліо</a></li>
+                <li class="list-studio list"><a class="studio current" href="./index.html">Студія</a></li>
+                <li class="list-portfolio list "><a class="studio" href="./portfolio.html">Портфоліо</a></li>
                 <li class="list-contact list "><a class="studio" href="Контакти">Контакти</a></li>
             </ul>
         </nav>
             <!--Телефон і номер-->
         <ul class="contact">
-            <li class="contact-gmail list"><a class="nomer" href="malito:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="contact-tel list"><a class="nomer" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="contact-gmail list">
+                <a class="nomer" href="malito:info@devstudio.com">
+                    <svg class="icon-envelope">
+                        <use class="gmail-icon" href="./images/icons.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com</a>
+            </li>
+            <li class="contact-tel list">  
+                <a class="nomer" href="tel:+380961111111">
+                    <svg class="icon-smartphone">
+                        <use href="./images/icons.svg#icon-smartphone-1"></use>
+                    </svg>
+                    +38 096 111 11 11</a>
+            </li>
         </ul>
         </div>
     </header>
@@ -46,7 +58,7 @@
             <div class="container">
                 <ul class="list-port">
                 <li class="technorac port-project">
-                    <a class="fishnet" href="#">
+                    <a class="link-port" href="#">
                         <img
                         class="img-port"
                         src="./images/block(1).jpg" alt="technorac website"  width="370">
@@ -57,7 +69,7 @@
                     </a>
                 </li>
                 <li class="poster port-project">
-                    <a class="fishnet" href="#">
+                    <a class="link-port" href="#">
                         <img
                         class="img-port"
                         src="./images/block(2).jpg" alt="
@@ -69,7 +81,7 @@
                     </a>
                 </li>
                 <li class="restaurant port-project">
-                    <a class="fishnet" href="#">
+                    <a class="link-port" href="#">
                         <img 
                         class="img-port"
                         src="./images/block(3).jpg" alt="Restaurant emblem" width="370">
@@ -80,7 +92,7 @@
                     </a>
                 </li>
                 <li class="project port-project">
-                    <a class="fishnet" href="#">
+                    <a class="link-port" href="#">
                         <img
                         class="img-port"
                         src="./images/block(4).jpg" alt="Headphones" width="370">
@@ -91,7 +103,7 @@
                     </a>
                 </li>
                 <li class="boxes port-project">
-                    <a class="fishnet" href="#">
+                    <a class="link-port" href="#">
                         <img
                         class="img-port"
                         src="./images/block(5).jpg" alt="
@@ -103,7 +115,7 @@
                     </a>
                 </li>
                 <li class="veb-site port-project">
-                    <a class="fishnet" href="#">
+                    <a class="link-port" href="#">
                         <img
                         class="img-port"
                         src="./images/block(6).jpg" alt="Monitor with a site" width="370">
@@ -114,7 +126,7 @@
                     </a>
                 </li>
                 <li class="magazine port-project">
-                    <a class="fishnet" href="#">
+                    <a class="link-port" href="#">
                         <img
                         class="img-port"
                         src="./images/block(7).jpg" alt="Publication of the magazine" width="370">
@@ -125,7 +137,7 @@
                     </a>
                 </li>
                 <li class="lab port-project">
-                    <a class="fishnet" href="#">
+                    <a class="link-port" href="#">
                         <img
                         class="img-port"
                         src="./images/block(8).jpg" alt="The project from the lab" width="370">
@@ -136,7 +148,7 @@
                     </a>
                 </li>
                 <li class="addition port-project">
-                    <a class="fishnet" href="#">
+                    <a class="link-port" href="#">
                         <img
                         class="img-port"
                         src="./images/block(9).jpg" alt="An application for a computer" width="370">
@@ -152,22 +164,57 @@
     </main>
     <!--Підвал-->
     <footer class="footer">
-        <div class="container">
-            <a href="/index.html" class="footer-logo logo">Web<span class="footer-span">Studio</span></a>
-        <address class="adress">
-            <ul class="footer-adress">
-                <li class="google-map conect-gmail">
-                    <a class="footer-adress"
-                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                    target="_blank"
-                    rel="noopener noreferrer nofollow">
-                    м. Київ, пр-т Лесі Украінки, 26
+        <div class="container footer-flex">
+            <div class="adressa">
+                <a href="/index.html" class="footer-logo logo">Web<span class="footer-span">Studio</span></a>
+                <address class="adress">
+                    <ul class="footer-adress">
+                        <li class="google-map conect-gmail">
+                        <a class="footer-adress"
+                        href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                        target="_blank"
+                        rel="noopener noreferrer nofollow">
+                        м. Київ, пр-т Лесі Украінки, 26
+                        </a>
+                        </li>
+                        <li class="conect-gmail conect-gmail"><a class="phone" href="malito:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="conect-tel conect-gmail"><a class="phone" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+        <div class="joining">
+            <h3 class="title-joining">приєднуйтесь</h3>
+            <ul class="joining-icons">
+                <li class="list-icons">
+                    <a class="joining-link" href="">
+                        <svg class="merej-icons">
+                            <use href="./images/icons.svg#icon-instagram-2-1"></use>
+                        </svg>
                     </a>
                 </li>
-                <li class="conect-gmail conect-gmail"><a class="phone" href="malito:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="conect-tel conect-gmail"><a class="phone" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                <li class="list-icons">
+                    <a class="joining-link" href="">
+                        <svg class="merej-icons">
+                            <use href="./images/icons.svg#icon-twitter-1-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="list-icons">
+                    <a class="joining-link" href="">
+                        <svg class="merej-icons">
+                            <use href="./images/icons.svg#icon-facebook-1-1"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="list-icons">
+                    <a class="joining-link" href="">
+                        <svg class="merej-icons">
+                            <use href="./images/icons.svg#icon-linkedin-1-1"></use>
+                        </svg>
+                    </a>
+                </li>
             </ul>
-        </address>
+        </div>
         </div>
     </footer>
 </body>
