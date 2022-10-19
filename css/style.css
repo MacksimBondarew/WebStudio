@@ -316,9 +316,6 @@ a{
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.navigation {
-    margin-left: 93px;
-}
 .contact {
     margin-left: auto;
     text-align: center;
@@ -604,4 +601,7 @@ a{
 }
 .joining {
     margin-left: 70px;
+}
+.nav {
+    margin-left: 93px;
 }
