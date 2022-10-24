@@ -472,6 +472,10 @@ a{
     width: 370px;
     margin-top: 0px;
     margin-bottom: 30px;
+    overflow: hidden;
+}
+.port-project:nth-child(3n){
+    margin-right: 0px;
 }
 .link-port {
     cursor: pointer;
@@ -480,9 +484,6 @@ a{
 .link-port:hover,
 .link-port:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.port-project:nth-child(3n){
-    margin-right: 0px;
 }
 .text-elements {
     padding-top: 30px;
@@ -658,16 +659,10 @@ a{
 .nav {
     margin-left: 93px;
 }
-.div-ingidant{
-    margin-right: 30px;
-}
-.div-ingidant:last-child{
-    margin-right: 0px;
-}
-.div-ingidant {
+.block-photo {
     position: relative;
 }
-.ingidant-div {
+.image-block {
     position: absolute;
     width: 370px;
     height: 70px;
@@ -685,4 +680,42 @@ a{
     margin-top: 0px;
     padding: 27px 0px;
     color: var(--active-color);
+}
+.animation-portfolio {
+    position: relative;;
+}
+.block-photo::before {
+    position: relative;
+}
+.animation-portfolio::before{
+    content: '';
+    width: 370px;
+    height: 294px;
+    display: inline-block;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    transform: translateX(100%);
+    background-color: rgba(33, 150, 243, 0.9);
+    transition: transform 1s var(--timing-cubic);
+}
+.animation-portfolio:hover::before{
+    transform: translateX(0);
+}
+.text-portfolio {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text-photo {
+    color: var(--active-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+/* or 156% */
+
+    letter-spacing: 0.03em;
 }
