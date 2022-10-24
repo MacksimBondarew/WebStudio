@@ -8,6 +8,7 @@
     --color-footer-last:  rgba(255, 255, 255, 0.6);
     --button-active: #188CE8;
     --background-color-shapka: #C4C4C4;
+    --timing-cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 *,
 *::before,
@@ -99,17 +100,9 @@ img {
 .studio:hover {
     color: var(--background-color);
 }
-.studio:focus {
+.studio:focus,
+.studio:active {
     color: var(--background-color);
-}
-.studio {
-    color: var(--two-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    line-height: 1.14;
-    
-    display: inline-block;
 }
 .nomer {
     color:var(--osnova-text-color);
@@ -244,9 +237,69 @@ a{
 .phone:active {
     color: var(--background-color);
 }
+.studio {
+    color: var(--two-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 1.14;
+    display: block;
+    position: relative;
+    display: inline-block;
+}
+.studio::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    border-radius: 2px;
+    transition: background-color 500ms var(--timing-cubic);
+}
+.studio:hover:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--background-color);
+    left: 0;
+    bottom: 0;
+    border-radius: 2px;
+}
 .current {
-    color:var(--background-color)
-
+    color:var(--background-color);
+    position: relative;
+}
+.current::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    border-radius: 2px;
+    background-color: var(--background-color);
+    color: var(--background-color);
+}
+.portfolio {
+    color:var(--background-color);
+    position: relative;
+}
+.portfolio::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    border-radius: 2px;
+    background-color: var(--background-color);
+    color: var(--background-color);
 }
 .button-filter {
     color: var(--two-text-color);
@@ -604,4 +657,13 @@ a{
 }
 .nav {
     margin-left: 93px;
+}
+.div-ignition {
+    position: relative;
+}
+.ignition-div {
+    width: 370px;
+    height: 70px;
+    position: absolute;
+    background-color: #212121;
 }
