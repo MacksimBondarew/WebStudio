@@ -140,7 +140,6 @@ img {
     padding-top: 200px;
     padding-bottom: 200px;
     align-items: center;
-    text-align: center;
 }
 .button-studio {
     background-color:var(--background-color);
@@ -153,7 +152,10 @@ img {
     letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
-    
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 4px;
     border: transparent;
     padding: 10px 32px;
@@ -726,4 +728,32 @@ a{
     font-size: 18px;
     line-height: 1.55;
     letter-spacing: 0.03em;
+}
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity 500ms var(--timing-cubic);
+}
+.backdrop .is-hidden .modal {
+    scale: translate(-50%, -50%) scale(0.5);
+}
+.modal {
+    min-width: 528px;
+    min-height: 581px;
+    background-color: var(--active-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms var(--timing-cubic);
+    padding: 30px;
+}
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
 }

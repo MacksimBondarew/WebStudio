@@ -47,7 +47,27 @@
         <!--Кнопка і заголовок-->
         <section class="header-studio overlay" >
             <div class="container"><h1 class="main-header">Ефективні рішення для вашого бізнесу</h1>
-            <button class="button button-studio" type="button">Замовити послугу</button></div>
+            <button class="button button-studio" data-open-modal type="button">Замовити послугу</button></div>
+            <div class="backdrop is-hidden"  data-backdrop>
+                <div class="modal">
+                    <button type="button" data-close-modal>Закрити</button>
+                </div>
+            </div>
+            <script>
+                const refs = {
+                openModalBtn: document.querySelector('[data-open-modal]'),
+                closeModalBtn: document.querySelector('[data-close-modal]'),
+                backdrop: document.querySelector('[data-backdrop]'),
+                };
+                refs.openModalBtn.addEventListener('click', toggleModal);
+                refs.closeModalBtn.addEventListener('click', toggleModal);
+                refs.backdrop.addEventListener('click', logBackdropClick);
+                function toggleModal() { refs.backdrop.classList.toggle('is-hidden');
+                }
+                function logBackdropClick() {
+                    console.log('Это клик в бекдроп');
+                }
+            </script>
         </section>
         <!--Переваги компанії-->
         <section class="benefits section">
