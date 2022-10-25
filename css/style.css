@@ -711,7 +711,7 @@ a{
     left: 0;
     padding: 63px 24px;
     opacity: 0;
-    transition: opacity var(--timing-cubic) 500ms;
+    transition: opacity 500ms var(--timing-cubic) ;
     animation-direction: normal;
 }
 .text-portfolio:hover,
