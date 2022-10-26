@@ -114,7 +114,7 @@ img {
     fill: var(--osnova-text-color);
     display: flex;
     align-items: center;
-    transition: color 500ms var(--timing-cubic) , fill 500ms var(--timing-cubic);
+    transition: color 250ms var(--timing-cubic) , fill 250ms var(--timing-cubic);
 }
 
 .nomer:focus
@@ -140,7 +140,7 @@ img {
     background-color:var(--background-color-shapka);
     padding-top: 200px;
     padding-bottom: 200px;
-    align-items: center;
+    text-align: center;
 }
 .button-studio {
     background-color:var(--background-color);
@@ -154,9 +154,6 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 4px;
     border: transparent;
     padding: 10px 32px;
@@ -215,7 +212,7 @@ img {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
-    transition: color 500ms var(--timing-cubic);
+    transition: color 250ms var(--timing-cubic);
 }
 .footer-adress:hover,
 .footer-adress:focus {
@@ -226,7 +223,7 @@ img {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
-    transition:  color 500ms var(--timing-cubic);
+    transition:  color 250ms var(--timing-cubic);
 }
 a{
     text-decoration: none;
@@ -250,7 +247,7 @@ a{
     line-height: 1.14;
     position: relative;
     display: inline-block;
-    transition: color 500ms var(--timing-cubic);
+    transition: color 250ms var(--timing-cubic);
 }
 .studio::after {
     content: '';
@@ -261,7 +258,7 @@ a{
     left: 0;
     bottom: -1px;
     border-radius: 2px;
-    transition: background-color 500ms var(--timing-cubic);
+    transition: background-color 250ms var(--timing-cubic);
 }
 .studio:hover:after {
     content: '';
@@ -277,7 +274,7 @@ a{
 .current {
     color:var(--background-color);
     position: relative;
-    transition: color 500ms var(--timing-cubic);
+    transition: color 250ms var(--timing-cubic);
 }
 .current::after {
     content: '';
@@ -323,7 +320,7 @@ a{
     border: 4px solid transparent;
     padding: 6px 22px;
     margin-right: 8px;
-    transition: color 500ms var(--timing-cubic), background-color 500ms var(--timing-cubic), box-shadow 500ms var(--timing-cubic);
+    transition: color 250ms var(--timing-cubic), background-color 250ms var(--timing-cubic), box-shadow 250ms var(--timing-cubic);
 }
 
 .button-filter:last-child{
@@ -488,7 +485,7 @@ a{
 .link-port {
     cursor: pointer;
     display: block;
-    transition: box-shadow 500ms var(--timing-cubic);
+    transition: box-shadow 250ms var(--timing-cubic);
 }
 .link-port:hover,
 .link-port:focus {
@@ -561,7 +558,7 @@ a{
     padding: 12px;
     fill: #afb1b8;
     border-radius: 50%;
-    transition: background-color 500ms var(--timing-cubic), fill 500ms var(--timing-cubic);
+    transition: background-color 250ms var(--timing-cubic), fill 250ms var(--timing-cubic);
 }
 .list-icons + .list-icons {
     margin-left: 10px;
@@ -595,7 +592,7 @@ a{
     align-items: center;
     border-radius: 4px;
     fill: #AFB1B8;
-    transition: fill  500ms var(--timing-cubic), border 500ms var(--timing-cubic)
+    transition: fill  250ms var(--timing-cubic), border-color 250ms var(--timing-cubic)
 }
 .list-client + .list-client {
     margin-left: 30px;
@@ -604,7 +601,7 @@ a{
 .link-client:focus,
 .link-client:active{
     fill: var(--background-color);
-    border: 1px solid var(--background-color);
+    border-color:  var(--background-color);
 }
 .ya-co{
     width: 41px;
@@ -652,7 +649,7 @@ a{
     fill: var(--active-color);
     border-radius: 50px;
     background-color: #43444D;
-    transition: background-color 500ms var(--timing-cubic);
+    transition: background-color 250ms var(--timing-cubic);
 }
 .joining-link:hover,
 .joining-link:focus,
@@ -710,7 +707,7 @@ a{
     position: absolute;
     transform: translateX(100%);
     background-color: rgba(33, 150, 243, 0.9);
-    transition: transform 500ms var(--timing-cubic);
+    transition: transform 250ms var(--timing-cubic);
 }
 .animation-portfolio:hover::before{
     transform: translateX(0);
@@ -722,7 +719,7 @@ a{
     left: 0;
     padding: 63px 24px;
     opacity: 0;
-    transition: opacity 500ms var(--timing-cubic) ;
+    transition: opacity 250ms var(--timing-cubic) ;
     animation-direction: normal;
 }
 .text-portfolio:hover,
@@ -748,7 +745,7 @@ a{
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: opacity 500ms var(--timing-cubic);
+    transition: opacity 250ms var(--timing-cubic);
 }
 .backdrop .is-hidden .modal {
     scale: translate(-50%, -50%) scale(0.5);
@@ -802,7 +799,7 @@ a{
     height: 100%;
     background: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
-    transition: transform 500ms var(--timing-cubic);
+    transition: transform 250ms var(--timing-cubic);
 }
 .overlay-text {
     padding: 63px 24px;
@@ -812,4 +809,9 @@ a{
     color: #FFFFFF;
     width: auto;
     height: auto;
+}
+.icon-vector {
+    width: 11px;
+    height: 11px;
+    text-align: center;
 }
