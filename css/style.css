@@ -482,6 +482,9 @@ a{
 .port-project:nth-child(3n){
     margin-right: 0px;
 }
+.port-project:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+}
 .link-port {
     cursor: pointer;
     display: block;
@@ -782,6 +785,10 @@ a{
     width: 370px;
     height: 294px;
     overflow: hidden;
+}
+.box:hover,
+.box:focus {
+    box-shadow: #000;
 }
 .box:hover .overlay-box,
 .box:focus .overlay-box {
