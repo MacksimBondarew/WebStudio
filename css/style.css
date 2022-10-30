@@ -1005,6 +1005,7 @@ a{
     position: absolute;
     top: 25%;
     right: 28px;
+    cursor: pointer;
 }
 .label-footer {
     position: relative;
