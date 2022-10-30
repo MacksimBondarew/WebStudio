@@ -996,7 +996,7 @@ a{
     border: none;
     cursor: pointer;
     text-align: left;
-    transition: box-shadow 250ms var(--timing-cubic);
+    transition: box-shadow 250ms var(--timing-cubic), background-color 250ms var(--timing-cubic);;
 }
 .icon-button {
     width: 24px;
