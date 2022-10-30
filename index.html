@@ -55,23 +55,48 @@
                             <use href="./images/icons.svg#icon-Vector"></use>
                         </svg>
                     </button>
+                    <h2 class="title-modal">Залиште свої дані, ми вам передзвонимо</h2>
+                    <form class="form">
+                        <label class='form-field'>
+                            <span class="name-modal">Ім'я</span>
+                            <input type="text" name="mame" class="input-modal">
+                            <svg class="modal-icons">
+                                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+                            </svg>
+                        </label>
+                        <label class='form-field'>
+                            <span class="name-modal">Телефон</span>
+                            <input type="tel" name="phone" class="input-modal">
+                            <svg class="modal-icons">
+                                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                            </svg>
+                        </label>
+                        <label class='form-field'>
+                            <span class="name-modal">Пошта</span>
+                            <input type="email" name="gmail-modal" class="input-modal">
+                            <svg class="modal-icons">
+                                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                            </svg>
+                        </label>
+                        <label class="envelope">
+                            <span class="name-modal">Коментар</span>
+                            <textarea name="feedback" class="coment-modal" placeholder="Введіть текст"></textarea>
+                        </label>
+                        <label class="contract-selectio">
+                            <input type="checkbox" class="check-mark" name="hobby" value="Погоджуюся з розсилкою та приймаю  Умови договору" checked />
+                            <svg class="icon-box">
+                                <use href="./images/icons.svg#icon-icon-check"></use>
+                            </svg>
+                            <span class="text-box">Погоджуюся з розсилкою та приймаю  <a href="https://www.google.com/search?q=виходь+за+мене&client=opera&hs=0Ww&sxsrf=ALiCzsZ559o50oWJ9DvzbDdjOPB-CLTuDA:1667154885673&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiTz_v1y4j7AhUOxosKHbYlD6YQ_AUoAXoECAIQAw&biw=1880&bih=977&dpr=1#imgrc=1yXnjcwVmVxk4M" class="treaty">Умови договору</a> </span>
+                        </label>
+                        <label>
+                            <button type="submit" name="button-modal" class="button-modal-form">
+                                Відправити
+                            </button>
+                        </label>
+                    </form>
                 </div>
             </div>
-            <script>
-                const refs = {
-                openModalBtn: document.querySelector('[data-open-modal]'),
-                closeModalBtn: document.querySelector('[data-close-modal]'),
-                backdrop: document.querySelector('[data-backdrop]'),
-                };
-                refs.openModalBtn.addEventListener('click', toggleModal);
-                refs.closeModalBtn.addEventListener('click', toggleModal);
-                refs.backdrop.addEventListener('click', logBackdropClick);
-                function toggleModal() { refs.backdrop.classList.toggle('is-hidden');
-                }
-                function logBackdropClick() {
-                    console.log('Это клик в бекдроп');
-                }
-            </script>
         </section>
         <!--Переваги компанії-->
         <section class="benefits section">
@@ -436,7 +461,23 @@
                 </li>
             </ul>
         </div>
+        <div class="mailing-list">
+            <h3 class='title-maling'>Підпишіться на розсилку</h3>
+            <form class="footer-form">
+                <label>
+                    <input type="email" name="gmail-fotter" class="text-footer" placeholder="E-mail">
+                </label>
+                <label class="label-footer">
+                    <button type="submit" name="button-footer" class="button-footer">Підписатися</button>
+                    <svg class="icon-button">
+                        <use href="./images/icons.svg#icon-icon-send"></use>
+                    </svg>
+                </label>
+            </form>
+        </div>
         </div>
     </footer>
+    <script src="./js/modal.js">
+    </script>
 </body>
 </html>
