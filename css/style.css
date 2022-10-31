@@ -635,19 +635,16 @@ a{
 .title-joining,
 .title-maling {
     color: var(--active-color);
-    margin-top: 12px;
-    margin-bottom: 20px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    margin-bottom: 20px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-.title-maling {
-    margin-top: 20px;
-}
+
 
 .joining-link {
     display: flex;
@@ -672,6 +669,7 @@ a{
 }
 .footer-flex {
     display: flex;
+    align-items: baseline;
 }
 .joining {
     margin-left: 70px;
@@ -771,6 +769,7 @@ a{
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms var(--timing-cubic);
     z-index: 20;
+    padding: 40px;
 }
 .is-hidden {
     opacity: 0;
@@ -829,10 +828,7 @@ a{
 }
 .title-modal {
     display: block;
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     margin-top: 0 ;
     font-weight: 700;
 
@@ -841,11 +837,6 @@ a{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--two-text-color);
-}
-.form {
-    width: 448px;
-    height: 342px;
-    display: inline-block;
 }
 .form-field {
     position: relative;
@@ -905,11 +896,12 @@ a{
     resize: none;
     border-radius: 4px;
     transition: border 250ms var(--timing-cubic);
+    display: block;
 }
 .check-mark{
     position: absolute; white-space: nowrap; width: 1px; height: 1px; overflow: hidden; border: 0; padding: 0; clip: rect(0 0 0 0); clip-path: inset(50%); margin: -1px;
 }
-.icon-box {
+.icon-box{
     width: 16px;
     height: 15px;
     fill: var(--active-color);
@@ -918,11 +910,12 @@ a{
     padding: 0%;
     margin-right: 7px;
     cursor: pointer;
-    transition: fill 250ms var(--timing-cubic), background-color 250ms var(--timing-cubic)
+    transition: fill 250ms var(--timing-cubic), background-color 250ms var(--timing-cubic), border 250ms var(--timing-cubic);
 }
 .check-mark:checked + .icon-box{
     fill: var(--background-color);
     background-color: var(--background-color);
+    border: 0px solid transparent;
 }
 .contract-selectio {
     display: flex;
@@ -996,6 +989,7 @@ a{
     border: none;
     cursor: pointer;
     text-align: left;
+    position: relative;
     transition: box-shadow 250ms var(--timing-cubic), background-color 250ms var(--timing-cubic);;
 }
 .icon-button {
@@ -1006,10 +1000,6 @@ a{
     top: 25%;
     right: 28px;
     cursor: pointer;
-}
-.label-footer {
-    position: relative;
-    display: inline-block;
 }
 .button-footer:hover,
 .button-footer:focus {
