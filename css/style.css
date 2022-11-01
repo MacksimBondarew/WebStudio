@@ -749,6 +749,7 @@ a{
     background: rgba(0, 0, 0, 0.2);
     opacity: 1;
     transition: opacity 250ms var(--timing-cubic);
+    z-index: 100;
 }
 .backdrop .is-hidden .modal {
     scale: translate(-50%, -50%) scale(0.5);
