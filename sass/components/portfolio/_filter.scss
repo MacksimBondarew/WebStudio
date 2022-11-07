@@ -1,0 +1,46 @@
+.click-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+} 
+.click-portfolio__list {
+    display: block;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin-right: 8px;
+    justify-content: center;
+}
+.click-portfolio__list:last-child {
+    margin-right: 0;
+}
+.click-portfolio__button {
+    color: var($two-text-color);
+    background-color: var($dont-active-color);
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.65;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 4px;
+    border: 4px solid transparent;
+    padding: 6px 22px;
+    margin-right: 8px;
+    transition: color 250ms var($timing-cubic), background-color 250ms var($timing-cubic), box-shadow 250ms var($timing-cubic);
+}
+
+.click-portfolio__button:last-child{
+    margin-right: 0px;
+}
+.click-portfolio__button:hover,
+.click-portfolio__button:focus,
+.click-portfolio__button:active{
+    color: var($active-color);
+    background-color:$background-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}

@@ -1,0 +1,168 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var($background-h1-color);
+}
+.footer-flex {
+    display: flex;
+    align-items: baseline;
+}
+.footer-logo {
+    margin-top: 0;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.logo {
+    color:var($background-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+.footer-span {
+    color: var($active-color);
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+.adress__footer {
+    color: var($active-color);
+    padding: 0px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    transition: color 250ms var($timing-cubic);
+}
+.adress__footer:hover,
+.adress__footer:focus {
+    color:$background-color;
+}
+.adress__gmail {
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+.adress__gmail:last-child{
+    margin-bottom: 0;
+}
+.adress__phone {
+    color: var($color-footer-last);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    transition:  color 250ms var($timing-cubic);
+}
+.adress__phone:hover,
+.adress__phone:focus,
+.adress__phone:active {
+    color:$background-color;
+}
+.joining {
+    margin-left: 70px;
+}
+.title-joining {
+    color: var($active-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.joining-icons {
+    display: flex;
+}
+.joining-icons__list + .joining-icons__list {
+    margin-left: 10px;
+}
+
+.joining-icons__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    fill: var($active-color);
+    border-radius: 50px;
+    background-color: #43444D;
+    transition: background-color 250ms var($timing-cubic);
+}
+.joining-icons__link:hover,
+.joining-icons__link:focus,
+.joining-icons__link:active{
+    border-radius: 50px;
+    background-color:var($background-color);
+}
+.joining-icons__merej {
+    width: 20px;
+    height: 20px;
+}
+.mailing-list {
+    margin-left: 93px;
+}
+.title-maling {
+    color: var($active-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.footer-form__text {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    background-color: transparent;
+    width: 358px;
+    margin-right: 12px;
+    color: var($active-color);
+    cursor: pointer;
+    transition: border 250ms var($timing-cubic);
+}
+.footer-form__text:focus {
+    outline: none;
+    border: 1px solid$background-color;
+}
+.footer-form__button {
+    background-color: var($button-active);
+    border-radius: 4px;
+    padding: 10px 28px;
+    color: var($active-color);
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 0;
+    bottom: 0;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    position: relative;
+    transition: box-shadow 250ms var($timing-cubic), background-color 250ms var($timing-cubic);;
+}
+.footer-form__button:hover,
+.footer-form__button:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color:$background-color;
+}
+.footer-form__icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+    right: 28px;
+    cursor: pointer;
+}
