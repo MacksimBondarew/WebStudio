@@ -1739,6 +1739,7 @@ a{
 .joining-icons__list + .joining-icons__list {
     margin-left: 10px;
 }
+
 .joining-icons__link {
     display: flex;
     width: 44px;
