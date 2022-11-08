@@ -532,6 +532,10 @@ a:active {
   margin-right: 30px;
 }
 
+.important-benefits__list:last-child {
+  margin-right: 0px;
+}
+
 .icons {
   width: 270px;
   height: 120px;

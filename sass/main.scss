@@ -11,26 +11,26 @@
 /*components header*/
 
 
-@import 'components/header';
+@import 'layout/header';
 
 
 /*studio*/
 
 
-@import 'studio/first.title';
-@import 'studio/modal';
-@import 'studio/benefits';
-@import 'studio/employment';
-@import 'studio/comand';
-@import 'studio/company';
+@import 'pages/studio/first.title';
+@import 'pages/studio/modal';
+@import 'pages/studio/benefits';
+@import 'pages/studio/employment';
+@import 'pages/studio/comand';
+@import 'pages/studio/company';
 
 
 /*portfolio*/
 
 
-@import 'portfolio/filter';
-@import 'portfolio/product';
+@import 'pages/portfolio/filter';
+@import 'pages/portfolio/product';
 /*footer*/
 
 
-@import 'components/footer';
+@import 'layout/footer';
