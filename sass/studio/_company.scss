@@ -1,0 +1,58 @@
+/*company*/
+.title-client {
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+.regular-customers {
+    display: flex;
+    justify-content: center;
+}
+.regular-customers_list {
+    width: 170px;
+    height: 92px;
+    display: inline-flex;
+}
+.regular-customers_list + .regular-customers_list {
+    margin-left: 30px;
+}
+.regular-customers__link {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    fill: #AFB1B8;
+    transition: fill  250ms var(--timing-cubic), border-color 250ms var(--timing-cubic)
+}
+.regular-customers__link:hover,
+.regular-customers__link:focus,
+.regular-customers__link:active{
+    fill: var(--background-color);
+    border-color:  var(--background-color);
+}
+.regular-customers__ya-co{
+    width: 41px;
+    height: 46.7px;
+}
+.regular-customers__taglin-here {
+    width: 40px;
+    height: 52px;
+}
+.regular-customers__company {
+    height: 41.181514739990234px;
+    width: 43.46000671386719px;
+}
+.regular-customers__foster-reters {
+    height: 40.62312698364258px;
+    width: 84.43647766113281px;
+}
+.regular-customers__brand {
+    height: 45.43336486816406px;
+    width: 62.53999710083008px;
+}
+.regular-customers__tag-lin {
+    height: 43.925514221191406px;
+    width: 93.79356384277344px;
+}

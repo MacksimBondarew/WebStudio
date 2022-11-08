@@ -1,5 +1,36 @@
+/*utils*/
+
+
 @import 'utils/vars';
-@import 'utils/everyone';
+
+
+/*base*/
+@import 'base/essential';
+
+
+/*components header*/
+
+
 @import 'components/header';
-@import 'components/studio';
+
+
+/*studio*/
+
+
+@import 'studio/first.title';
+@import 'studio/modal';
+@import 'studio/benefits';
+@import 'studio/employment';
+@import 'studio/comand';
+@import 'studio/company';
+
+
+/*portfolio*/
+
+
+@import 'portfolio/filter';
+@import 'portfolio/product';
+/*footer*/
+
+
 @import 'components/footer';

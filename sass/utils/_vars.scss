@@ -1,12 +1,12 @@
 :root {
-    $osnova-text-color :  #757575;
-    $two-text-color: #212121;
-    $background-color: #2196F3;
-    $active-color: #FFFFFF;
-    $dont-active-color: #F5F4FA;
-    $background-h1-color: #2F303A;
-    $color-footer-last:  rgba(255, 255, 255, 0.6);
-    $button-active: #188CE8;
-    $background-color-shapka: #C4C4C4;
-    $timing-cubic: cubic-bezier(0.4, 0, 0.2, 1);
+    --osnova-text-color :  #757575;
+    --two-text-color: #212121;
+    --background-color: #2196F3;
+    --active-color: #FFFFFF;
+    --dont-active-color: #F5F4FA;
+    --background-h1-color: #2F303A;
+    --color-footer-last:  rgba(255, 255, 255, 0.6);
+    --button-active: #188CE8;
+    --background-color-shapka: #C4C4C4;
+    --timing-cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }

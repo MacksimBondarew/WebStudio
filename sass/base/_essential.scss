@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 body {
-    background-color: var($active-color);
-    color: $osnova-text-color;
+    background-color: var(--active-color);
+    color: var(--osnova-text-color);
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.03em;
 }
@@ -53,10 +53,11 @@ a{
     margin-right: auto;
 }
 .secondary-title {
-    color: var($two-text-color);
+    color: var(--two-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
 }
 .visual-hiden { position: absolute; white-space: nowrap; width: 1px; height: 1px; overflow: hidden; border: 0; padding: 0; clip: rect(0 0 0 0); clip-path: inset(50%); margin: -1px; }
+/*header*/

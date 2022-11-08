@@ -1,3 +1,4 @@
+/*header*/
 .hat {
     border-bottom: 1px solid #ECECEC;
 }
@@ -5,23 +6,23 @@
 .logo:hover
 .logo:focus
 .logo:visited {
-    color:$background-color;
+    color: var(--background-color);
 }
 .logo--span:active
 .logo--span:hover
 .logo--span:focus
 .logo--span:visited {
-    color: var($two-text-color);
+    color: var(--two-text-color);
 }
 .logo {
-    color:var($background-color);
+    color:var(--background-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
 }
 .logo--span {
-    color: var($two-text-color);
+    color: var(--two-text-color);
 }
 .navigation {
     margin-left: 93px;
@@ -47,14 +48,14 @@
     justify-content: center;
 }
 .navigation__studio {
-    color: var($two-text-color);
+    color: var(--two-text-color);
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
     line-height: 1.14;
     position: relative;
     display: inline-block;
-    transition: color 250ms var($timing-cubic);
+    transition: color 250ms var(--timing-cubic);
 }
 .navigation__studio::after {
     content: '';
@@ -65,7 +66,7 @@
     left: 0;
     bottom: -1px;
     border-radius: 2px;
-    transition: background-color 250ms var($timing-cubic);
+    transition: background-color 250ms var(--timing-cubic);
 }
 .navigation__studio:hover:after {
     content: '';
@@ -73,15 +74,15 @@
     display: block;
     width: 100%;
     height: 4px;
-    background-color:$background-color;
+    background-color: var(--background-color);
     left: 0;
     bottom: -1px;
     border-radius: 2px;
 }
 .navigation__current {
-    color:var($background-color);
+    color:var(--background-color);
     position: relative;
-    transition: color 250ms var($timing-cubic);
+    transition: color 250ms var(--timing-cubic);
 }
 .navigation__current::after {
     content: '';
@@ -92,27 +93,27 @@
     left: 0;
     bottom: -1px;
     border-radius: 2px;
-    background-color:$background-color;
-    color:$background-color;
+    background-color: var(--background-color);
+    color: var(--background-color);
 }
 .navigation__studio:hover {
-    color:$background-color;
+    color: var(--background-color);
 }
 .navigation__studio:focus,
 .navigation__studio:active {
-    color:$background-color;
+    color: var(--background-color);
 }
 .contact__nomer {
-    color:$osnova-text-color;
+    color:var(--osnova-text-color);
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
     line-height: 1.14;
-    fill: $osnova-text-color;
+    fill: var(--osnova-text-color);
     display: flex;
     align-items: center;
-    transition: color 250ms var($timing-cubic) , fill 250ms var($timing-cubic);
+    transition: color 250ms var(--timing-cubic) , fill 250ms var(--timing-cubic);
 }
 
 .contact__smartphone {
@@ -135,6 +136,6 @@
 .contcontact__envelope:focus,
 .contcontact__smartphone:hover,
 .contcontact__smartphone:focus{
-    color:$background-color;
-    fill:$background-color;
+    color: var(--background-color);
+    fill: var(--background-color);
 }

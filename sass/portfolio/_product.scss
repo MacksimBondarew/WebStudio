@@ -17,7 +17,7 @@
 .list-port__link {
     cursor: pointer;
     display: block;
-    transition: box-shadow 250ms var($timing-cubic);
+    transition: box-shadow 250ms var(--timing-cubic);
 }
 .list-port__link:hover .list-port__overlay,
 .list-port__link:focus .list-port__overlay,
@@ -47,7 +47,7 @@
     height: 100%;
     background: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
-    transition: transform 250ms var($timing-cubic);
+    transition: transform 250ms var(--timing-cubic);
 }
 .list-port__text {
     padding: 63px 24px;
@@ -65,7 +65,7 @@
     border-right: 1px solid #EEEEEE;
 }
 .list-port__name {
-    color: var($two-text-color);
+    color: var(--two-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -74,7 +74,7 @@
     margin-bottom: 4px;
 }
 .list-port__general-text {
-    color: $osnova-text-color;
+    color: var(--osnova-text-color);
     font-size: 16px;
     line-height: 1.87;
     margin-top: 0px;
