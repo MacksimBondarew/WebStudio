@@ -1,6 +1,12 @@
 .engane-me {
     margin-top: 0px;
     margin-bottom: 50px;
+    
+}
+.is-display {
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
 }
 .engane-important {
     display: flex;

@@ -6,15 +6,20 @@
     margin-bottom: 50px;
 }
 .comand-member {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    margin: -15px;
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 .comand-member__list {
     flex-basis: 270px;
-    margin-right: 30px;
+    margin: 15px;
     background-color: var(--active-color);
     text-align: center;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    
 }
 .comand-member__list:last-child {
     margin-right: 0;

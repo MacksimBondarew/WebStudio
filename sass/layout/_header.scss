@@ -18,8 +18,13 @@
     color:var(--background-color);
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
+    
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
 .logo--span {
     color: var(--two-text-color);
@@ -107,13 +112,18 @@
     color:var(--osnova-text-color);
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 0.02em;
-    line-height: 1.14;
+    line-height: 1.16;
     fill: var(--osnova-text-color);
     display: flex;
     align-items: center;
     transition: color 250ms var(--timing-cubic) , fill 250ms var(--timing-cubic);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.14;
+    }
 }
 
 .contact__smartphone {

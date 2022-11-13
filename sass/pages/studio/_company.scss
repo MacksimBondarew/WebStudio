@@ -5,18 +5,22 @@
 }
 .regular-customers {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    margin: -15px;
 }
-.regular-customers_list {
-    width: 170px;
-    height: 92px;
-    display: inline-flex;
-}
-.regular-customers_list + .regular-customers_list {
-    margin-left: 30px;
+.regular-customers__list {
+    flex-basis: calc((100% - 30px * 2) / 2);
+    margin: 15px;
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px * 3) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 30px * 6) / 6);
+    }
 }
 .regular-customers__link {
-    width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
     display: flex;
