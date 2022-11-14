@@ -119,13 +119,13 @@
     letter-spacing: 0.02em;
     color: var(--background-color);
 }
-.social-networks__link::before {
+.social-networks__link::after {
     content: '';
     border: 1px solid rgba(33, 33, 33, 0.2);
     transform: rotate(90deg);
     margin-left: 10px;
     margin-right: 10px;
 }
-.social-networks__link::before:nth-child(1) {
+.social-networks__link::after:nth-child(1) {
     display: none;
 }
