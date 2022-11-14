@@ -112,6 +112,13 @@
 .social-networks{
     display: flex;
 }
+.social-networks:not(:last-child)::after {
+    content: '';
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+    margin-left: 10px;
+    margin-right: 10px;
+}
 .social-networks__link {
     font-weight: 500;
     font-size: 18px;

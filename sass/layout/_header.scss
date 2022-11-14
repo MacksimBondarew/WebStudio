@@ -149,3 +149,38 @@
     color: var(--background-color);
     fill: var(--background-color);
 }
+.contact {
+    @media screen and (max-width:1199px){
+        display: block;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+.contact .contact__nomer {
+    @media screen and (max-width:1199px){
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+.contact .contact__list + .contact__list {
+    @media screen and (max-width:1199px){
+        margin-left: 0;
+    }
+}
+.contact__list:nth-child(1) {
+    @media screen and (max-width:1199px){
+        margin-bottom: 10px;
+    }
+}
+.contact__envelope {
+    @media screen and (max-width:1199px){
+        width: 14px;
+        height: 10px;
+    }
+}
+.contact__smartphone {
+    @media screen and (max-width:1199px){
+        width: 10px;
+        height: 14px;
+    }
+}
