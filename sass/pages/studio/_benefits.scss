@@ -54,6 +54,10 @@
     text-align: center;
     margin-top: 0;
     margin-bottom: 10px;
+
+    @media screen and (min-width: 768px){
+        text-align: left;
+    }
 }
 .important-benefits__text {
     font-size: 14px;
