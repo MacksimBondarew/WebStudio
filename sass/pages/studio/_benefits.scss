@@ -6,6 +6,7 @@
 .important-benefits {
     display: block;
     margin: -15px;
+    padding: 0px 15px;
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
@@ -16,15 +17,21 @@
     }
 }
 .important-benefits__list {
-    flex-basis: calc(100% - 15px);
-    margin: 15px;
+    @media screen and (max-width: 767px){
+        margin-bottom: 15px;
 
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
     @media screen and (min-width: 768px){
         flex-basis: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
     }
 
     @media screen and (min-width: 1200px){
         flex-basis: calc((100% - 4 * 30px) / 4);
+        margin: 15px;
     }
 }
 .icons {
@@ -44,7 +51,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-
+    text-align: center;
     margin-top: 0;
     margin-bottom: 10px;
 }

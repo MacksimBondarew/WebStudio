@@ -1,15 +1,19 @@
 .header-studio {
     background-color:var(--background-color-shapka);
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     text-align: center;
+    @media screen and (min-width: 1200px){
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 }
 .overlay {
     display: flex;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    max-width: 1600px;
     height: 400px;
     background-color: var(--background-h1-color);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -41,7 +45,6 @@
 }
 }
 .main-header {
-        padding-bottom: 30px;
         max-width: 365px;
         font-weight: 900;
         font-size: 26px;
@@ -50,15 +53,13 @@
         text-transform: uppercase;
         margin-right: auto;
         margin-left: auto;
+        margin-top: 0px;
         
         @media screen and (min-width: 1200px) {
         max-width: 696px;
         font-size: 44px;
         line-height: 1.364;
-        text-align: left;
         text-align: center;
-        margin-left: auto;
-        margin-right: auto;
         }
     }
 .button-studio {

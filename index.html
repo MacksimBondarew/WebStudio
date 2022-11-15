@@ -63,55 +63,6 @@
         <section class="header-studio overlay" >
             <div class="container"><h1 class="main-header">Ефективні рішення для вашого бізнесу</h1>
             <button class=" button-studio" data-open-modal type="button">Замовити послугу</button></div>
-            <div class="backdrop is-hidden"  data-backdrop>
-                <div class="modal">
-                    <button type="button" class="modal-button" data-close-modal>
-                        <svg class="modal-button__vector">
-                            <use href="./images/icons.svg#icon-Vector"></use>
-                        </svg>
-                    </button>
-                    <p class="title-modal">Залиште свої дані, ми вам передзвонимо</p>
-                    <form class="form-modal">
-                        <label class='form-modal__form-field'>
-                            <span class="form-modal__name">Ім'я</span>
-                            <input type="text" name="mame" class="form-modal__input">
-                            <svg class="form-modal__icons">
-                                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
-                            </svg>
-                        </label>
-                        <label class='form-modal__form-field'>
-                            <span class="form-modal__name">Телефон</span>
-                            <input type="tel" name="phone" class="form-modal__input">
-                            <svg class="form-modal__icons">
-                                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
-                            </svg>
-                        </label>
-                        <label class='form-modal__form-field'>
-                            <span class="form-modal__name">Пошта</span>
-                            <input type="email" name="gmail-modal" class="form-modal__input">
-                            <svg class="form-modal__icons">
-                                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
-                            </svg>
-                        </label>
-                        <label class="form-modal__envelope">
-                            <span class="form-modal__name">Коментар</span>
-                            <textarea name="feedback" class="form-modal__coment" placeholder="Введіть текст"></textarea>
-                        </label>
-                        <label class="form-modal__contract">
-                            <input type="checkbox" class="form-modal__mark" name="hobby" value="Погоджуюся з розсилкою та приймаю  Умови договору" />
-                            <svg class="form-modal__box">
-                                <use href="./images/icons.svg#icon-icon-check"></use>
-                            </svg>
-                            <span class="form-modal__text">Погоджуюся з розсилкою та приймаю  <a href="https://www.google.com/search?q=виходь+за+мене&client=opera&hs=0Ww&sxsrf=ALiCzsZ559o50oWJ9DvzbDdjOPB-CLTuDA:1667154885673&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiTz_v1y4j7AhUOxosKHbYlD6YQ_AUoAXoECAIQAw&biw=1880&bih=977&dpr=1#imgrc=1yXnjcwVmVxk4M" class="form-modal__treaty">Умови договору</a> </span>
-                        </label>
-                        <label>
-                            <button type="submit" name="button-modal" class="form-modal__button">
-                                Відправити
-                            </button>
-                        </label>
-                    </form>
-                </div>
-            </div>
         </section>
         <!--Переваги компанії-->
         <section class="benefits section">
@@ -168,7 +119,7 @@
             <ul class="engane-important">
                 <li class="engane-important__list">
                         <img
-                        src="images/img--4.jpg"
+                        srcset="./images/working/img1.jpg 1x, ./images/working/img1@2x 2x.jpg"
                         alt="Розробка інтернет додатків"
                         width="370"
                         >
@@ -177,7 +128,7 @@
                         </div>
                 <li class="engane-important__list">
                         <img
-                        src="images/img(1).jpg"
+                        srcset="./images/working/img2.jpg 1x, ./images/working/img2@2x 2x.jpg"
                         alt="Адаптація під мобільні пристрої"
                         width="370"
                         >
@@ -186,7 +137,8 @@
                         </div>
                 </li>
                 <li class="engane-important__list">
-                        <img src="images/img(2).jpg" alt="Планшет дизайнера" width="370">
+                        <img srcset="./images/working/img3.jpg 1x, ./images/working/img3@2x 2x.jpg"
+                        alt="Планшет дизайнера" width="370">
                         <div  class="engane-important__block">
                             <p>Дизайнерські рішення</p>
                         </div>
@@ -516,6 +468,55 @@
         </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden"  data-backdrop>
+        <div class="modal">
+            <button type="button" class="modal-button" data-close-modal>
+                <svg class="modal-button__vector">
+                    <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+            </button>
+            <p class="title-modal">Залиште свої дані, ми вам передзвонимо</p>
+            <form class="form-modal">
+                <label class='form-modal__form-field'>
+                    <span class="form-modal__name">Ім'я</span>
+                    <input type="text" name="mame" class="form-modal__input">
+                    <svg class="form-modal__icons">
+                        <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+                    </svg>
+                </label>
+                <label class='form-modal__form-field'>
+                    <span class="form-modal__name">Телефон</span>
+                    <input type="tel" name="phone" class="form-modal__input">
+                    <svg class="form-modal__icons">
+                        <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                    </svg>
+                </label>
+                <label class='form-modal__form-field'>
+                    <span class="form-modal__name">Пошта</span>
+                    <input type="email" name="gmail-modal" class="form-modal__input">
+                    <svg class="form-modal__icons">
+                        <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                    </svg>
+                </label>
+                <label class="form-modal__envelope">
+                    <span class="form-modal__name">Коментар</span>
+                    <textarea name="feedback" class="form-modal__coment" placeholder="Введіть текст"></textarea>
+                </label>
+                <label class="form-modal__contract">
+                    <input type="checkbox" class="form-modal__mark" name="hobby" value="Погоджуюся з розсилкою та приймаю  Умови договору" />
+                    <svg class="form-modal__box">
+                        <use href="./images/icons.svg#icon-icon-check"></use>
+                    </svg>
+                    <span class="form-modal__text">Погоджуюся з розсилкою та приймаю  <a href="https://www.google.com/search?q=виходь+за+мене&client=opera&hs=0Ww&sxsrf=ALiCzsZ559o50oWJ9DvzbDdjOPB-CLTuDA:1667154885673&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiTz_v1y4j7AhUOxosKHbYlD6YQ_AUoAXoECAIQAw&biw=1880&bih=977&dpr=1#imgrc=1yXnjcwVmVxk4M" class="form-modal__treaty">Умови договору</a> </span>
+                </label>
+                <label>
+                    <button type="submit" name="button-modal" class="form-modal__button">
+                        Відправити
+                    </button>
+                </label>
+            </form>
+        </div>
+    </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
             <svg
