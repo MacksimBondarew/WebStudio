@@ -55,7 +55,7 @@
     margin-top: 0;
     margin-bottom: 10px;
 
-    @media screen and (min-width: 768px){
+    @media screen and (max-width: 768px){
         text-align: center;
         align-items: left;
     }
