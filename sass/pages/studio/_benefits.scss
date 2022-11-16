@@ -6,7 +6,6 @@
 .important-benefits {
     display: block;
     margin: -15px;
-    padding: 0px 15px;
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
@@ -18,8 +17,8 @@
 }
 .important-benefits__list {
     @media screen and (max-width: 767px){
-        margin-bottom: 15px;
-
+        margin-bottom: 30px;
+        padding: 0px 15px;
         &:last-child{
             margin-bottom: 0px;
         }

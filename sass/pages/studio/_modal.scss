@@ -182,8 +182,9 @@
     font-size: 14px;
     line-height: 1.71;
     color: #757575;
-    @media screen and (min-width: 320px) and (max-width: 479px){
+    @media screen and (min-width: 320px) and (max-width: 480px){
         text-align: center;
+        font-size: 12px;
     }
 }
 .form-modal__treaty {
@@ -230,3 +231,9 @@
         line-height: 1.714;
     }
 }
+.form-modal__label-button{
+    display: flex;
+    justify-content: center;
+}
+
+
