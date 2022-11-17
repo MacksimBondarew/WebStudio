@@ -1029,6 +1029,9 @@ a:active {
   justify-content: center;
   margin-bottom: 50px;
 }
+.click-portfolio:last-child(-n + 2) {
+  margin-bottom: 0px;
+}
 
 .click-portfolio__list {
   display: block;
@@ -1037,6 +1040,11 @@ a:active {
   text-align: center;
   margin-right: 8px;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .click-portfolio__list:nth-child(-n+3) {
+    margin-bottom: 15px;
+  }
 }
 
 .click-portfolio__list:last-child {
@@ -1077,21 +1085,23 @@ a:active {
 .list-port {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
 }
 
 .list-port__project {
-  margin-right: 30px;
-  width: 370px;
-  margin-top: 0px;
-  margin-bottom: 30px;
+  flex-basis: calc(100% - 30px);
+  margin: 15px;
 }
-
-.list-port__project:nth-child(3n) {
-  margin-right: 0px;
+@media screen and (min-width: 768px) {
+  .list-port__project {
+    flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
 }
-
-.list-port__project:nth-last-child(-n+3) {
-  margin-bottom: 0px;
+@media screen and (min-width: 1200px) {
+  .list-port__project {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 .list-port__link {
@@ -1110,8 +1120,6 @@ a:active {
 
 .list-port__box {
   position: relative;
-  width: 370px;
-  height: 294px;
   overflow: hidden;
 }
 
@@ -1167,6 +1175,12 @@ a:active {
   font-size: 16px;
   line-height: 1.87;
   margin-top: 0px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .general-port-text--modification {
+    height: 147px;
+  }
 }
 
 /*footer*/
