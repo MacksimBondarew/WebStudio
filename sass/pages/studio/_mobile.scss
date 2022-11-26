@@ -80,6 +80,9 @@
     margin-bottom: 35px;
     letter-spacing: 0.02em;
   }
+  .mobile-menu .mobile-navigation--curent{
+    color: #2196F3;;
+  }
   .mobile-navigation:last-child {
     margin-bottom: 302px;
   }
@@ -138,4 +141,7 @@
 }
 .social-networks__link::after:nth-child(1) {
     display: none;
+}
+.mobile-navigation--curent{
+  color: #2196F3;;
 }
